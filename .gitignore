@@ -41,6 +41,7 @@ jspm_packages
 Session.vim
 
 # Serverless
+.yml
 .webpack
 .serverless
 
