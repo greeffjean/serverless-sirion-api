@@ -44,6 +44,7 @@ functions:
       - http:
           path: sirion
           method: post
+          cors: true
           authorizer: aws_iam
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
@@ -54,6 +55,7 @@ functions:
       - http:
           path: sirion/{id}
           method: get
+          cors: true
           authorizer: aws_iam
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
@@ -64,6 +66,7 @@ functions:
       - http:
           path: sirion
           method: get
+          cors: true
           authorizer: aws_iam
   delete:
     # Defines an HTTP API endpoint that calls the main function in delete.js
@@ -74,4 +77,5 @@ functions:
       - http:
           path: sirion/{id}
           method: delete
+          cors: true
           authorizer: aws_iam
